@@ -1,0 +1,20 @@
+{
+  "name": "pipeline_stuck_ro_triage",
+  "description": "Workflow used to detect and prioritize roster operations that are stalled within the processing pipeline.",
+  "inputs": [
+    "roster_processing_details.csv"
+  ],
+  "procedure_steps": [
+    "Select records where the IS_STUCK flag equals 1",
+    "Order records by stage processing duration to highlight longest delays",
+    "Evaluate health indicators across different pipeline stages",
+    "Flag operations with Red health status as highest priority",
+    "Aggregate results by organization and state for operational visibility"
+  ],
+  "expected_outputs": [
+    "Collection of roster operations currently stuck in the pipeline",
+    "Priority ranking for escalation handling",
+    "Identification of potential bottleneck stages"
+  ],
+  "application_context": "Operational teams run this procedure to diagnose pipeline slowdowns and determine which roster operations require immediate remediation."
+}

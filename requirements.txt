@@ -1,0 +1,11 @@
+langchain
+langchain-community
+faiss-cpu
+pandas
+plotly
+sentence-transformers
+duckdb
+crewai
+streamlit
+python-dotenv
+tavily-python

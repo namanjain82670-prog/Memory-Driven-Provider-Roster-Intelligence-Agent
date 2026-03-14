@@ -1,0 +1,21 @@
+{
+  "name": "market_pipeline_health_analysis",
+  "description": "Procedure for evaluating transaction success performance at the market level and identifying potential pipeline-related causes.",
+  "inputs": [
+    "aggregated_operational_metrics.csv",
+    "roster_processing_details.csv"
+  ],
+  "procedure_steps": [
+    "Aggregate roster processing data by CNT_STATE",
+    "Calculate counts of stuck and failed roster operations for each state",
+    "Merge aggregated pipeline metrics with the market operational dataset",
+    "Evaluate market SCS_PERCENT values against pipeline issue indicators",
+    "Highlight markets where reduced success rates align with pipeline disruptions"
+  ],
+  "expected_outputs": [
+    "Comprehensive market health assessment",
+    "List of states showing declining operational success rates",
+    "Insights linking pipeline processing delays with transaction failures"
+  ],
+  "application_context": "Operational analytics teams run this workflow to understand whether market performance degradation is associated with upstream pipeline processing issues."
+}

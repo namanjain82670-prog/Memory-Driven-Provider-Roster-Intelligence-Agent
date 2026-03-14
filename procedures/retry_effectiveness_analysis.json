@@ -1,0 +1,20 @@
+{
+  "name": "retry_performance_evaluation",
+  "description": "Workflow designed to assess how effective retry processing is in recovering transactions that initially failed.",
+  "inputs": [
+    "aggregated_operational_metrics.csv"
+  ],
+  "procedure_steps": [
+    "Retrieve metrics for first iteration successes and failures",
+    "Retrieve metrics for retry iteration successes and failures",
+    "Compute recovery percentage achieved during retry processing",
+    "Compare first pass success rate against retry pass success rate",
+    "Highlight markets where retry attempts do not significantly improve outcomes"
+  ],
+  "expected_outputs": [
+    "Retry recovery or lift rate calculated for each market",
+    "List of markets showing weak retry recovery performance",
+    "Operational recommendations to improve retry effectiveness"
+  ],
+  "application_context": "Operations teams use this workflow to determine whether retry mechanisms are successfully recovering failed transactions and to identify markets requiring process improvements."
+}
