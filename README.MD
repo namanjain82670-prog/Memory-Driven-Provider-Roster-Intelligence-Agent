@@ -25,9 +25,7 @@ to automatically:
 🔍 detect operational problems
 📊 analyze market performance
 🧠 explain root causes
-⚡ help operations teams respond faster
-
-The system was built for the **HiLabs Cognizance 2026 Hackathon**.
+⚡ help operations teams respond faster**.
 
 ---
 
@@ -383,9 +381,7 @@ By combining:
 the system becomes a **powerful operational intelligence assistant** for healthcare data pipelines.
 
 
-## Team Vastavikta
-Members Name : Naman jain, Riya jain, Shreya Pandey, Ashutosh kumar
-Email address: namanjain82670@gmail.com
+
 
 ---
 
